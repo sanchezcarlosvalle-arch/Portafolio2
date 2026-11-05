@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ing.Carlos Osmany — Portafolio Personal </title>
+    <link rel="stylesheet" href="./src/less/style.less">
+    <link rel="icon" type="image/png" href="img/logo_perfil.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <header class="site-header">
+        <div class="header-inner">
+            
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proyectos">Portafolio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    
+    <section class="hero" id="inicio">
+        <div class="hero-foto">
+            <img src="img/logo_perfil.png" alt="Foto de perfil ">
+        </div>
+        <div class="hero-content">
+            <p class="hero-saludo">Hola, mi nombre es </p>
+            <h1 class="hero-nombre">Carlos Osmany Sanchez Valle</h1>
+            <p class="hero-titulo">Futuro desarrollador y analista de datos</p>
+            <p class="hero-desc">
+                Estudiante de Ingeniería en Sistemas Computacionales, apasionado por
+                crear soluciones funcionales y interfaces que aporten valor real.
+            </p>
+            <div class="hero-btns">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-outline">Contactarme</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="destacados" id="destacados">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="carousel" id="caruselPrincipal">
+                <div class="track">
+                    <div class="slide">
+                        <div class="image">
+                            <img src="img/c2.png" alt="El Cairo">
+                        </div>
+                        <div class="action">
+                            <h3>Sistema El Cairo</h3>
+                            <p>Sistema de escritorio en Java, l gestion de inventario, ventas y reportes para la empresa El Cairo, con conexión a base de datos supabase y generación de reportes en PDF, tambien con una arquitectura que se puede mejorar a futuro e implementar, auqnue la empresa crezca mas..</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image">
+                            <img src="img/acolitos.png" alt="Acolitos">
+                        </div>
+                        <div class="action">
+                            <h3>Pagina Web Acolitos</h3>
+                            <p>Pagina web para el grupo de acolitos de la parroquia Santa Rosa de Lima, del municipio de Guaimaca, para conocer todas sus actividades y noticias de ellos y de la parroquia.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image">
+                            <img src="img/Movil.jpeg" alt="Gestión de Restaurantes">
+                        </div>
+                        <div class="action">
+                            <h3>Gestión de Restaurantes</h3>
+                            <p>Aplicacion movil para la gestion de restaurantes, con funcionalidades de gestion de usuarios, gestion de productos, gestion de pedidos y reportes.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image">
+                            <img src="img/b1.png" alt="bimbo">
+                        </div>
+                        <div class="action">
+                            <h3>Sistema de escritorio Bimbo</h3>
+                            <p>Sistema de escritorio orientado a la empresa bimbo, con funcionalidades, gestion de usuarios, gestion d elos diferentes de productos, gestion de los diferentes movimintos y entradas al pesar los diferentes productos y Reporteria.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn btnleft" aria-label="Proyecto anterior">&#8249;</button>
+                <button class="carousel-btn btnright" aria-label="Proyecto siguiente">&#8250;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROYECTOS ========== -->
+    <section class="proyectos" id="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos / Portafolio</h2>
+
+            <div class="projects-grid">
+
+                <!-- Proyecto 1 -->
+                <article class="project-card" data-category="escritorio">
+                    <div class="card-img">
+                        <img src="img/c2.png" alt="El Cairo">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>Sistema El Cairo</h3>
+                            <span class="card-badge">Java</span>
+                        </div>
+                        <p>
+                            Sistema de escritorio en Java, l gestion de inventario, ventas y reportes para la empresa El Cairo, 
+                            con conexión a base de datos supabase y generación de reportes en PDF, tambien con una arquitectura que se puede mejorar a futuro e implementar
+                            , auqnue la empresa crezca mas..
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-tech">
+                                <span>Java</span>
+                                <span>Supabase</span>
+                                
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="btn-card">Inicio de la pagina</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2-->
+                <article class="project-card" data-category="pagina-web">
+                    <div class="card-img">
+                        <img src="img/acolitos.png" alt="Acolitos">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>Pagina Web Acolitos</h3>
+                            <span class="card-badge">HTML/CSS</span>
+                        </div>
+                        <p>
+                            Pagina web para el grupo de acolitos de la parroquia Santa Rosa de Lima, del municipio de Guaimaca,
+                            para conocer todas sus actividades y noticias de ellos y de la parroquia.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-tech">
+                                <span>css</span>
+                                <span>html</span>
+                                <span>json</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="btn-card">Inicio de la pagina</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project-card" data-category="escritorio">
+                    <div class="card-img">
+                       <img src="img/Movil.jpeg" alt="Gestión de Restaurantes">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>Gestión de Restaurantes</h3>
+                            <span class="card-badge">C#</span>
+                        </div>
+                        <p>
+                            Aplicacion movil para la gestion de restaurantes, con funcionalidades de gestion de usuarios, gestion de productos, gestion de pedidos y reportes.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-tech">
+                                <span>JAVA</span>
+                                <span>Android Studio</span>
+                                
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="btn-card">Inicio de la pagina</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="project-card" data-category="web">
+                    <div class="card-img card-img--dual">
+                        <img src="img/b1.png" alt="bimbo">
+                        <img src="img/b2.png" alt="Foto de perfil ">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>Sistema de escritorio Bimbo</h3>
+                            <span class="card-badge">HTML / CSS</span>
+                        </div>
+                        <p>
+                            Sistema de escritorio orientado a la empresa bimbo, con funcionalidades, gestion de usuarios, gestion d elos diferentes de productos,
+                            gestion de los diferentes movimintos y entradas al pesar los diferentes productos y Reporteria.
+                        </p>
+                        <div class="card-footer">
+                            <div class="card-tech">
+                                <span>C#</span>
+                                <span>Supabase</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="btn-card">Inicio de la pagina</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Mi Persona ========== -->
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="container">
+            <h2 class="section-title">Sobre mí persona</h2>
+             <div class="bio-card">
+                    <h3>Biografía</h3>
+                    <p>
+                        Soy Carlos Osmany Sanchez Valle, actualemnte curso el tercer año de la carrera de
+                        "Ingeniería en Ciencias de la Computacion" en la Universidad Catolica de Honduras , con enfoque en desarrollo de software y web.
+                         Me interesa el analisis de datos y la creación de aplicaciones limpias, funcionales
+                        y con buenas prácticas de desarrollo y seguir aprendiendo.
+                    </p>
+                    <p>
+                        A lo largo de mi formación en la universidad y fuera de ella, 
+                        he trabajado con HTML, CSS, JavaScript,
+                        Java, C# y bases de datos, tengo la aprticipacion en algunos trabajos dentro y fuera de la universidad, lo que me ha permitido adquirir experiencia práctica en el desarrollo de proyectos reales.
+                        de la universidad, me gustaria seguir expandoendome en el analisis de datos y la inteligencia artificial, ya que considero que son áreas con gran potencial de crecimiento y aplicación en el mundo actual.
+                    </p>
+                </div>
+            <div class="sobre-mi-grid">
+                <div class="skills-card">
+                    <h3>Conocimientos</h3>
+                    <ul class="conocimientos-list">
+                        <li><span class="conocimientos-tag">Ofimatica</span></li>
+                        <li><span class="conocimientos-tag">Supabase</span></li>
+                        <li><span class="conocimientos-tag">MySQL</span></li>
+                        <li><span class="conocimientos-tag">Vmix</span></li>
+                        <li><span class="conocimientos-tag">HTML5</span></li>
+                        <li><span class="conocimientos-tag">CSS3</span></li>
+                        <li><span class="conocimientos-tag">JavaScript</span></li>
+                        <li><span class="conocimientos-tag">Java</span></li>
+                        <li><span class="conocimientos-tag">C#</span></li>
+                        <li><span class="conocimientos-tag">SQL</span></li>
+                        <li><span class="conocimientos-tag">Git GitHub</span></li>
+                        <li><span class="conocimientos-tag">Figma</span></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h3>¿Te interesaria mis servicios?</h3>
+                    <p>
+                       Cualquier proyecto o idea para tu negocio o emprendimiento, no dudes en contactarme, estoy abierto a nuevas oportunidades y proyectos.
+                    </p>
+                    <ul class="contacto-datos">
+                        
+                        <li>
+                            <span class="contacto-icono">📧</span>
+                            <a href="sanchezcarlosvalle@gmail.com">sanchezcarlosvalle@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="contacto-icono">📱</span>
+                            <a href="tel:+504 9999-9999">+504 9999-9999</a>
+                    </ul>
+                </div>
+
+                <div class="formulario">
+                    <h3>Formulario de Contacto</h3>
+                    <form id="contactForm">
+                        <div id="txtNombreDiv">
+                            <label for="txtNombre">Nombre</label>
+                            <input type="text" id="txtNombre">
+                        </div>
+                        <div id="txtCorreoDiv">
+                            <label for="txtCorreoElectronico">Correo</label>
+                            <input type="email" id="txtCorreoElectronico">
+                        </div>
+                        <div id="txtMensajeDiv">
+                            <label for="txtMensaje">Mensaje</label>
+                            <textarea id="txtMensaje"></textarea>
+                        </div>
+                        <button type="submit" id="btnEnviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Osmany Sanchez — Proyectos de tu servidor</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
